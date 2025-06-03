@@ -1,0 +1,44 @@
+/* Custom Styles for Aquaflex Website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: hsl(0, 0%, 0%);
+    background: #42daf52d;
+}
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styling */
+.card {
+    border: rgb(202, 14, 14);
+    box-shadow: 0 4px 6px hsl(0, 31%, 77%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #62d1f9;
+    border-color: #619ca62d;
+    border-width: 2cap;
+}
+
+.card-title {
+    color: #000810;
+}
+
+.card-text {
+    color: #010203;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: rgb(126, 38, 38);
+    font-size: 0.9rem;
+}
