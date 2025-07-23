@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Library - CaseConnect</title>
+    <meta name="description"
+        content="Access curated case studies from top consulting firms, organized by industry and difficulty level.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">CaseConnect</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="cases.html" class="nav-link active">Cases</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#signup" class="nav-link btn-primary">Join Beta</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Case Library</h1>
+                <p class="page-subtitle">Curated case studies from top consulting firms</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <label for="industry-filter" class="filter-label">Filter by Cateogry:</label>
+                    <select id="industry-filter" class="filter-select">
+                        <option value="all">All </option>
+                        <option value="iim">IIM and other Case-books</option>
+                        <option value="books">Important Books</option>
+                        <option value="notes">Curated Notes</option>
+                        <option value="Industries">Industry knowledge </option>
+                        <option value="Guesstimates">Guesstimates</option>
+                        <option value="cv and Resume">CV and Resume Fix</option>
+                        <option value="video resources">Video resources</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Grid -->
+        <section class="cases-section section">
+            <div class="container">
+                <div class="cases-grid">
+                    <!-- Case Pack 1 -->
+                    <div class="case-card" data-industry="iim ">
+                        <div class="case-thumbnail">
+                            <img src="./assets/iim a cover.jpg " alt="Consumer Goods Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">IIMA casebook</h3>
+                            <p class="case-description">learn from top iims resources.</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Consumer Goods</span>
+                                <span class="case-difficulty">Intermediate</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/148Gy4TBK-h5PccPVSgf13c3YeVzE53et/view?usp=drive_link"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <!-- Case Pack 2 -->
+                    <div class="case-card" data-industry="iim">
+                        <div class="case-thumbnail">
+                            <img src="./assets/hindu case book cover.png" alt="Tech Strategy Case Study"
+                                class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">The Hindu Case Book</h3>
+                            <p class="case-description">This casebook has a pool of frameworks, concepts, cases and
+                                analysis. Before reading, keep a few tips in mind. Never try to remember a case or a
+                                framework since frameworks need to be......</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Technology</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1KtC-_RUjaFluYtp_TAGR0IwstccRv03D/view?usp=sharing"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <!-- Case Pack 3 -->
+                    <div class="case-card" data-industry="iim">
+                        <div class="case-thumbnail">
+                            <img src="./assets/dtu.png " alt="Healthcare Case Study"
+                                class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">DTU Case Book</h3>
+                            <p class="case-description">“Delhi Technological University has continued on the path of
+                                excellence in education
+                                for nearly 80 years, producing extremely capable and competent professionals. With
+                                the onset of a new academic year, and given the difficult times we are facing,.</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Healthcare</span>
+                                <span class="case-difficulty">Intermediate</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1SlXRQsUGRsJCNMd6l9NAdzxokzN4YH4D/view?usp=sharing"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+                    <!-- speeches-->
+                    <div class="case-card" data-industry="iim">
+                        <div class="case-thumbnail">
+                            <img src="./assets/greatest speech.jpg" alt="Tech Strategy Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Greatest Speech of all time.</h3>
+                            <p class="case-description">A curated list of speeches that lifted hearts, inspired courage,
+                                and changed history. From Theodore Roosevelt to Martin Luther King Jr., discover the
+                                style, substance, and impact of</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Technology</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/104J6UmywlfSM8h-jq0KfsvPuiFpAAgkA?usp=sharing"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Case Pack 4 -->
+                    <div class="case-card" data-industry="books">
+                        <div class="case-thumbnail">
+                            <img src="./assets/books.avif" alt="Financial Services Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Books</h3>
+                            <p class="case-description">learn from best curated books followed by every IIM Student.</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Financial Services</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1Uz3URTnaqZtDo_W9PYmg6tvQOWFge1Bm?usp=drive_link"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <!-- Case Pack 5 -->
+                    <div class="case-card" data-industry="Guesstimates">
+                        <div class="case-thumbnail">
+                            <img src="./assets/guesstimates.avif" alt="Energy Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Guesstimates</h3>
+                            <p class="case-description">okay lets braining and guessing with real world problems like
+                                how many cricket balls can fit in a passenger plane ...</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Energy & Utilities</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1vGdIWIShJvk9q6TWyGDMQx8YapkTOdbg?usp=drive_link"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <!-- Case Pack 6 -->
+                    <div class="case-card" data-industry="business week">
+                        <div class="case-thumbnail">
+                            <img src="./assets/business week cover.jpg" alt="Retail Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Business Week</h3>
+                            <p class="case-description">Grasp the trend and move with it. Learn about each and every hot
+                                topic of the Business World.</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Consumer Goods</span>
+                                <span class="case-difficulty">Beginner</span>
+                            </div>
+                            <a href="#" class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </DIV>
+
+                    <!-- Case Pack 7 -->
+                    <div class="case-card" data-industry="video resources ">
+                        <div class="case-thumbnail">
+                            <img src="./assets/resources cover.webp" alt="Video resources" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Video and Resources</h3>
+                            <p class="case-description">Learn from eminent Tutors and practice with the same enthu
+                                bacause you have all resources that they have .</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Consumer Goods</span>
+                                <span class="case-difficulty">Intermediate</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/148Gy4TBK-h5PccPVSgf13c3YeVzE53et/view?usp=drive_link"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+                    <!-- Case Pack 7 -->
+                    <div class="case-card" data-industry="video resources ">
+                        <div class="case-thumbnail">
+                            <img src="./assets/interview prep.png" alt="Video resources" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Interview preparation</h3>
+                            <p class="case-description">CareerVidz was founded by interview expert Richard McMunn in
+                                2011 and it specialises in teaching job-seekers everything there is to know about
+                                careers, tests and interview questions and answers. </p>
+                            <div class="case-meta">
+                                <span class="case-industry">Consumer Goods</span>
+                                <span class="case-difficulty">Intermediate</span>
+                            </div>
+                            <a href="https://www.youtube.com/@CareerVidz"
+                                class="btn btn-outline case-download">Watch Videos</a>
+                        </div>
+                    </div>
+                    <!-- Case Pack 8-->
+                    <div class="case-card" data-industry="iim">
+                        <div class="case-thumbnail">
+                            <img src="./assets/Screenshot 2025-07-04 175640.png" alt="Tech Strategy Case Study"
+                                class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">AWS</h3>
+                            <p class="case-description">Amazon Web Services (AWS) is a comprehensive cloud computing
+                                platform that offers over 200 fully featured services from data centers globally</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Technology</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1zuTNWyGelOiTALDZt7RF4E3uMHhcbIU7?usp=sharing"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+                    <!-- Case Pack 8-->
+                    <div class="case-card" data-industry="iim">
+                        <div class="case-thumbnail">
+                            <img src="./assets/mcknsey.jpeg" alt="Tech Strategy Case Study" class="case-image">
+                        </div>
+                        <div class="case-content">
+                            <h3 class="case-title">Mc kinsey OA kit</h3>
+                            <p class="case-description">McKinsey partners with leaders on strategy, innovating to net
+                                zero, leading with tech, and building capabilities for a sustainable, inclusive, growing
+                                future.</p>
+                            <div class="case-meta">
+                                <span class="case-industry">Technology</span>
+                                <span class="case-difficulty">Advanced</span>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/104J6UmywlfSM8h-jq0KfsvPuiFpAAgkA?usp=sharing"
+                                class="btn btn-outline case-download">Download PDF</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CaseConnect</h3>
+                    <p>Empowering the next generation of consultants.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="cases.html">Case Library</a></li>
+                            <li><a href="schedule.html">Schedule Session</a></li>
+                            <li><a href="index.html#signup">Join Beta</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CaseConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

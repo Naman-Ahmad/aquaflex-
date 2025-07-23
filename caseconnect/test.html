@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .nav-menu { display: none; }
+    .nav-menu.active { display: block; }
+    .hamburger { width: 25px; height: 3px; background: black; margin: 5px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu   = document.querySelector(".nav-menu");
+      console.log("toggle:", navToggle, "menu:", navMenu);
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
